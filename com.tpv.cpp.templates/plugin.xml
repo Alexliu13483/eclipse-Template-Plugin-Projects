@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.cdt.core.templates">
+      <template
+            filterPattern=".*gcc|.*g\+\+"
+            id="com.tpv.cpp.templates.opencv"
+            location="template/temp_opencv.xml"
+            projectType="org.eclipse.cdt.build.core.buildArtefactType.exe">
+	  </template>
+
+      <template
+            filterPattern=".*gcc|.*g\+\+"
+            id="com.tpv.cpp.templates.opencv310"
+            location="template/temp_opencv310.xml"
+            projectType="org.eclipse.cdt.build.core.buildArtefactType.exe">
+	  </template>
+	  
+      <template
+            filterPattern=".*gcc|.*g\+\+"
+            id="com.tpv.cpp.templates.cpputest"
+            location="template/temp_cpputest.xml"
+            projectType="org.eclipse.cdt.build.core.buildArtefactType.exe">
+	  </template>
+   </extension>
+
+</plugin>

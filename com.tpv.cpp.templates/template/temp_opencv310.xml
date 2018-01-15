@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<template type="ProjTempl" version="1.0" supplier="TPV"
+    revision="1.0" author="Alex Liu" id="opencv310" label="OpenCV310 Cpp Project"
+    description="OpenCV310 Cpp Project"
+    help="help.html">
+
+
+    <process type="org.eclipse.cdt.managedbuilder.core.NewManagedProject">
+        <simple name="name" value="$(projectName)" />
+        <simple name="artifactExtension" value="exe" />
+        <simple name="isCProject" value="false" />
+    </process>
+
+    <process type="org.eclipse.cdt.core.CreateSourceFolder">
+        <simple name="projectName" value="$(projectName)" ></simple>
+        <simple name="path" value="src" />
+    </process>
+
+    <process type="org.eclipse.cdt.core.AddFiles">
+        <simple name="projectName" value="$(projectName)" />
+        <complex-array name="files">
+            <element>
+                <simple name="source" value="src/MainProc.cpp" />
+                <simple name="target" value="src/MainProc.cpp" />
+                <simple name="replaceable" value="true" />
+            </element>
+        </complex-array>
+    </process>
+
+    <process type="org.eclipse.cdt.ui.OpenFiles">
+        <simple name="projectName" value="$(projectName)" />
+        <complex-array name="files">
+            <element>
+                <simple name="target" value="src/MainProc.cpp" />
+            </element>
+        </complex-array>
+    </process>
+
+   <process
+        type="org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues">
+        <simple name="projectName" value="$(projectName)" />
+        <complex-array name="resourcePaths">
+            <element>
+				<simple name="id" value=".*link\.option\.libs.*" />
+				<simple-array name="values">
+					<element value="opencv_core310" />
+					<element value="opencv_highgui310" />
+					<element value="opencv_imgproc310" />
+					<element value="opencv_ml310" />
+					<element value="opencv_video310" />
+					<element value="opencv_features2d310" />
+					<element value="opencv_calib3d310" />
+					<element value="opencv_objdetect310" />
+					<element value="opencv_flann310" />
+					<element value="opencv_videostab310" />
+					<element value="opencv_stitching310" />
+					<element value="opencv_superres310" />
+					<element value="opencv_shape310" />
+					<element value="opencv_photo310" />
+					<element value="opencv_ts310" />
+					<element value="opencv_videoio310" />
+					<element value="opencv_imgcodecs310" />
+				</simple-array>
+				<simple name="path" value="" />
+			</element>
+        </complex-array>
+    </process>
+    <process
+        type="org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues">
+        <simple name="projectName" value="$(projectName)" />
+        <complex-array name="resourcePaths">
+            <element>
+				<simple name="id" value=".*link\.option\.paths.*" />
+				<simple-array name="values">
+					<element value="C:\opencv310\build\lib" />
+				</simple-array>
+				<simple name="path" value="" />
+			</element>
+        </complex-array>
+    </process>
+    <process
+        type="org.eclipse.cdt.managedbuilder.core.AppendToMBSStringListOptionValues">
+        <simple name="projectName" value="$(projectName)" />
+        <complex-array name="resourcePaths">
+            <element>
+				<simple name="id" value=".*compiler\.option\.include\.paths.*" />
+				<simple-array name="values">
+					<element value="C:\opencv310\build\include" />
+				</simple-array>
+				<simple name="path" value="" />
+			</element>
+        </complex-array>
+    </process>
+</template>
