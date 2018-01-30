@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Templates
 Bundle-SymbolicName: com.tpv.cpp.templates;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0.2
 Bundle-Activator: com.tpv.cpp.templates.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
