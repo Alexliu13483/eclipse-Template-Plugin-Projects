@@ -1,4 +1,5 @@
 /*
+ * OpenCV C++ main program
  * MainProc.cpp
  *
  *  Created on: $(date)
